@@ -6,6 +6,25 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newNumber",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "updatedBy",
+						"type": "address"
+					}
+				],
+				"name": "NumberUpdated",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "activateContract",
 				"outputs": [],
@@ -46,6 +65,25 @@
 			{
 				"inputs": [],
 				"name": "callInternalFunction",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_inputString",
+						"type": "string"
+					}
+				],
+				"name": "concatenateString",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -143,6 +181,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -185,6 +242,19 @@
 						"type": "uint256"
 					}
 				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
 				"name": "storeNumber",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -214,6 +284,25 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "updateNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -245,11 +334,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0x0599c19ab9c7bf590c3b2ad5317cdeb690194e5d66d42d27b7140001aef7eb2c",
+			"keccak256": "0xba25cdbaef551c97f2e6a5ec688abdd6ba44c27af1256a66f3d1e21781f8f483",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e03a7197b53d2400b540fcdebec689eec08dcb25601ef517c28984f21c0f25e5",
-				"dweb:/ipfs/QmUXz8yM47DSdawZ8WMTRQjimUrGJzy3pQ67X1VehdM8Dn"
+				"bzz-raw://60ddb8026142c758ec5731186d1db8a6a9c3277f78052c7c09c4782a5b30b45e",
+				"dweb:/ipfs/Qmebw5Wh7762HQFkuTCEjDwWmcdWwVPyAxsEgUEG5wUcNL"
 			]
 		}
 	},
